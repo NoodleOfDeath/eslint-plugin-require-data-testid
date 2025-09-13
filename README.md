@@ -2,6 +2,8 @@
 
 An ESLint plugin that enforces `data-testid` attributes on native HTML button elements and **automatically fixes violations** by adding v5 UUID-based test IDs.
 
+![Demo](demo.gif "Demo of auto-fix in action")
+
 ## Features
 
 - ✅ Detects missing `data-testid` attributes on `<button>` elements

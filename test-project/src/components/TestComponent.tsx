@@ -13,10 +13,10 @@ const TestComponent: React.FC<TestComponentProps> = ({ onSubmit, onCancel }) => 
   return (
     <div className="test-component">
       <h2>Test Component with Buttons</h2>
-      
+
       {/* This button should trigger an ESLint error - missing data-testid */}
-      <button data-testid="70cf5704-02bf-53e7-bc96-59f563e8697a" 
-        type="button" 
+      <button data-testid="70cf5704-02bf-53e7-bc96-59f563e8697a"
+        type="button"
         onClick={handleClick}
         className="primary-button"
       >
@@ -24,9 +24,9 @@ const TestComponent: React.FC<TestComponentProps> = ({ onSubmit, onCancel }) => 
       </button>
 
       {/* This button should be fine - has data-testid */}
-      <button 
+      <button
         data-testid="valid-button"
-        type="button" 
+        type="button"
         onClick={handleClick}
         className="secondary-button"
       >
@@ -34,8 +34,8 @@ const TestComponent: React.FC<TestComponentProps> = ({ onSubmit, onCancel }) => 
       </button>
 
       {/* Another button without data-testid - should trigger error */}
-      <button data-testid="8cf08aa4-e31b-5209-804c-986480655672" 
-        type="submit" 
+      <button data-testid="8cf08aa4-e31b-5209-804c-986480655672"
+        type="submit"
         onClick={onSubmit}
         disabled={false}
       >
@@ -49,8 +49,8 @@ const TestComponent: React.FC<TestComponentProps> = ({ onSubmit, onCancel }) => 
             Cancel (Missing Test ID)
           </button>
         )}
-        
-        <button 
+
+        <button
           data-testid="confirm-action-btn"
           onClick={() => console.log('Confirmed')}
           style={{ marginLeft: '10px' }}
@@ -60,7 +60,7 @@ const TestComponent: React.FC<TestComponentProps> = ({ onSubmit, onCancel }) => 
       </div>
 
       {/* Button with dynamic attributes but missing data-testid */}
-      <button data-testid="511db516-8b68-5986-8fbb-936dd82bf48f" 
+      <button data-testid="511db516-8b68-5986-8fbb-936dd82bf48f"
         type="button"
         onClick={() => handleClick()}
         aria-label="Dynamic button"
@@ -68,6 +68,7 @@ const TestComponent: React.FC<TestComponentProps> = ({ onSubmit, onCancel }) => 
       >
         Dynamic Button
       </button>
+      <button data-testid="40d921bb-6894-5a48-8431-0872d034aa16">Click me</button>
     </div>
   );
 };
