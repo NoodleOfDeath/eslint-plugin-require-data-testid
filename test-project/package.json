@@ -1,0 +1,19 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "Test project for eslint-plugin-button-testid",
+  "private": true,
+  "scripts": {
+    "lint": "eslint src --ext .ts,.tsx,.js,.jsx"
+  },
+  "devDependencies": {
+    "eslint": "^9.15.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "@types/react": "^18.0.0"
+  }
+}

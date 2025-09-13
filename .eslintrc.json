@@ -1,0 +1,13 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["./eslint-plugin-button-testid"],
+  "rules": {
+    "button-testid/require-button-testid": "error"
+  }
+}
