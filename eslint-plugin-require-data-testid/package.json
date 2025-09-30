@@ -2,7 +2,22 @@
   "name": "eslint-plugin-require-data-testid",
   "version": "1.0.0",
   "description": "ESLint plugin to enforce data-testid attributes on native HTML elements like <button>.",
+  "type": "module",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "eslint",
     "plugin",
@@ -19,5 +34,13 @@
   },
   "dependencies": {
     "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.0",
+    "@types/estree": "^1.0.6",
+    "@types/estree-jsx": "^1.0.5",
+    "@types/node": "^20.0.0",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.0.0"
   }
 }

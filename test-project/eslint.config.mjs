@@ -1,8 +1,8 @@
-const buttonTestIdPlugin = require('../eslint-plugin-require-data-testid/lib');
-const typescriptPlugin = require('@typescript-eslint/eslint-plugin');
-const typescriptParser = require('@typescript-eslint/parser');
+import buttonTestIdPlugin from '../eslint-plugin-require-data-testid/lib/index.js';
+import typescriptPlugin from '@typescript-eslint/eslint-plugin';
+import typescriptParser from '@typescript-eslint/parser';
 
-module.exports = [
+export default [
   {
     files: ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
     languageOptions: {

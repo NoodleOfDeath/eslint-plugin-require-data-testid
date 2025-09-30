@@ -2,6 +2,7 @@
   "name": "test-project",
   "version": "1.0.0",
   "description": "Test project for eslint-plugin-require-data-testid",
+  "type": "module",
   "private": true,
   "scripts": {
     "lint": "eslint src --ext .ts,.tsx,.js,.jsx"
