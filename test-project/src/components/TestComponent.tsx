@@ -68,7 +68,7 @@ const TestComponent: React.FC<TestComponentProps> = ({ onSubmit, onCancel }) => 
       >
         Dynamic Button
       </button>
-      <button data-testid="40d921bb-6894-5a48-8431-0872d034aa16">Click me</button>
+      <button data-testid="dd96d5cd-85d1-5119-afa6-9fb9d2beb225">Click me</button>
     </div>
   );
 };

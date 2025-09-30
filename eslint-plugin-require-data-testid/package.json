@@ -1,12 +1,11 @@
 {
-  "name": "eslint-plugin-button-testid",
+  "name": "eslint-plugin-require-data-testid",
   "version": "1.0.0",
-  "description": "ESLint plugin to enforce data-testid attributes on native HTML buttons",
+  "description": "ESLint plugin to enforce data-testid attributes on native HTML elements like <button>.",
   "main": "lib/index.js",
   "keywords": [
     "eslint",
     "plugin",
-    "button",
     "testid",
     "testing"
   ],
